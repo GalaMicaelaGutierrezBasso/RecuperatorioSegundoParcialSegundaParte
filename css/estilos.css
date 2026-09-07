@@ -1,0 +1,31 @@
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    font-size: medium;
+    line-height: normal;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+}
+nav a:link {
+    background-color: aquamarine;
+    color: aliceblue;
+}
+nav a:visited {
+    background-color:blue;
+    color: aliceblue;
+}
+nav a:hover {
+    background-color: blueviolet;
+    color: aliceblue;
+}
+nav a:active {
+    background-color:brown;
+    color: aliceblue;
+}
