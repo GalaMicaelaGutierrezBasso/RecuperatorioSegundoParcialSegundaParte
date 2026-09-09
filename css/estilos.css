@@ -1,20 +1,41 @@
+h1, h2 {
+    text-align: center;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+.contenedor {
+    display: flex;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+section {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+}
 nav ul {
-    margin: 0;
-    padding: 0;
+    margin: 1rem;
+    padding: 2rem;
     list-style-type: none;
 }
 nav li {
     display: inline-block;
 }
 nav a {
-    font-size: medium;
+    font-size: large;
     line-height: normal;
-    padding: auto;
+    padding: 1rem 1rem;
     text-align: center;
     text-decoration: none;
 }
 nav a:link {
-    background-color: aquamarine;
+    background-color: rgb(255, 88, 88);
     color: aliceblue;
 }
 nav a:visited {
@@ -26,6 +47,6 @@ nav a:hover {
     color: aliceblue;
 }
 nav a:active {
-    background-color:brown;
+    background-color:rgb(157, 165, 42);
     color: aliceblue;
 }
