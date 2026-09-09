@@ -1,22 +1,52 @@
-h1, h2 {
-    text-align: center;
-    font-family: "Abel", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
+body {
+    background-image: url(../img/fondo.png);
+    background-position: center;
+    background-repeat: repeat;
 }
 .contenedor {
     display: flex;
-    max-width: 60%;
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+.imagen {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.inicio {
+    background-color: rgb(255, 255, 255);
+    padding: 0.1rem;
+}
 section {
+    display:inline-flex;
+}
+article {
     margin: 1rem;
     padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    width: 30%;
+}
+.articuloa {
+    width: 30%;
+    height:5%;
+}
+.articulob {
+    width: 50%;
+}
+header {
+    background-color: rgb(255, 255, 255);
+}
+h1, h2 {
+    text-align: center;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
     background-color: rgb(255, 255, 255);
 }
 nav ul {
@@ -28,25 +58,25 @@ nav li {
     display: inline-block;
 }
 nav a {
-    font-size: large;
-    line-height: normal;
+    font-size: 1.5rem;
+    line-height: 3rem;
     padding: 1rem 1rem;
     text-align: center;
     text-decoration: none;
 }
 nav a:link {
-    background-color: rgb(255, 88, 88);
+    background-color: rgb(255, 49, 227);
     color: aliceblue;
 }
 nav a:visited {
-    background-color:blue;
-    color: aliceblue;
+    background-color:rgb(255, 247, 16);
+    color: rgb(0, 0, 0);
 }
 nav a:hover {
     background-color: blueviolet;
     color: aliceblue;
 }
 nav a:active {
-    background-color:rgb(157, 165, 42);
+    background-color:rgb(246, 129, 27);
     color: aliceblue;
 }
