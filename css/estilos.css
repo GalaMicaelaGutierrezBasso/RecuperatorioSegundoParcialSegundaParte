@@ -99,3 +99,34 @@ nav a:active {
     font-weight: bold;
     background-color: rgb(241, 255, 41);
 }
+.formulario {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+form {
+	background: #BBB;
+	border: 0.4em solid rgb(0, 0, 0);
+	padding: 1em;
+}
+fieldset {
+	background: #f4acac;
+	border: 0.2em solid rgb(255, 244, 223);
+	margin: 1em 0;
+}
+legend {
+	color: rgb(22, 19, 81);
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #FFF;
+	padding: 0.2em;
+}
+label {
+	color: rgb(0, 0, 0);
+}
+button {
+	background: rgb(0, 8, 255);
+	color: white;
+	padding: 0.5em;
+}
