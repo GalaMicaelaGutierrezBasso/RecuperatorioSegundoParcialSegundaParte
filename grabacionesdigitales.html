@@ -19,10 +19,31 @@
             </ul>
         </nav>
     <main>
-        
+        <h1>Repositorio de grabaciones digitales de obras musicales de Laurie Anderson</h1>
+        <h2>Por favor, complete el siguiente formulario</h2>
+        <section class="formulario">
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Datos de la Obra</legend>
+                    <label for="nombre">Nombre: *</label>
+                    <input type="text" name="nombre" id="nombre" required><br>
+                    <label for="duracion">Duracion: *</label>
+                    <input type="number" name="duracion" id="duracion">minutos<br>
+                    <label for="peso">Peso del archivo: *</label>
+                    <input type="number" name="peso" id="peso">MB<br>
+                    <label for="transferencia">Tiempo estimado de transferencia en milisegundos por cada MB: *</label>
+                    <input type="number" name="transferencia" id="transferencia"><br>
+                    <label for="costo">Costo mensual de almacenamiento por cada MB: *</label>
+                    <input type="number" name="costo" id="costo"><br>
+                </fieldset>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+                <p class="resultado"></p>
+            </form>
+        	</section>
     </main>
 <footer><address>Para contactarse escribir a <a href="mailto:laurie@artedigital.com">laurie@artedigital.com</a></address></footer>
-    <script src="js/script.js"></script>
+    <script src="js/script4.js"></script>
     </div>
     </body>
 </html>
