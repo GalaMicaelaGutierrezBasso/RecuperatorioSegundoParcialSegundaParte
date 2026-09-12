@@ -81,3 +81,21 @@ nav a:active {
     background-color:rgb(246, 129, 27);
     color: aliceblue;
 }
+#obrasgaleria, #añoobra {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+#imagenobra {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+#datocurioso {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(241, 255, 41);
+}
