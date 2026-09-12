@@ -4,6 +4,7 @@ body {
     background-repeat: repeat;
 }
 .contenedor {
+    box-sizing: border-box;
     display: flex;
     max-width: 80%;
     display: flex;
@@ -38,7 +39,7 @@ article {
 .articulob {
     width: 50%;
 }
-header {
+header, footer {
     background-color: rgb(255, 255, 255);
 }
 h1, h2 {
