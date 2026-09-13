@@ -1,10 +1,10 @@
+* { box-sizing: border-box; }
 body {
     background-image: url(../img/fondo.png);
     background-position: center;
     background-repeat: repeat;
 }
 .contenedor {
-    box-sizing: border-box;
     display: flex;
     max-width: 80%;
     display: flex;
@@ -19,7 +19,7 @@ body {
     padding: 0.5rem;
 }
 .inicio {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 134, 134);
     padding: 0.1rem;
 }
 section {
@@ -28,7 +28,7 @@ section {
 article {
     margin: 1rem;
     padding: 1rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(236, 236, 236);
     flex-direction: column;
     width: 30%;
 }
@@ -41,6 +41,7 @@ article {
 }
 header, footer {
     background-color: rgb(255, 255, 255);
+    font-size: medium;
 }
 h1, h2 {
     text-align: center;
@@ -48,7 +49,7 @@ h1, h2 {
     font-weight: 400;
     font-style: normal;
     font-size: 3rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 134, 134);
 }
 nav ul {
     margin: 1rem;
@@ -99,34 +100,70 @@ nav a:active {
     font-weight: bold;
     background-color: rgb(241, 255, 41);
 }
-.formulario {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    height: auto;
-}
-form {
-	background: #BBB;
-	border: 0.4em solid rgb(0, 0, 0);
-	padding: 1em;
+.formulariorepositorio {
+    background-color: #33333d;
 }
 fieldset {
-	background: #f4acac;
-	border: 0.2em solid rgb(255, 244, 223);
-	margin: 1em 0;
+    border: 1px solid #fe0000;
+    padding: 15px 20px;
+    margin-bottom: 15px;
 }
 legend {
-	color: rgb(22, 19, 81);
-	font-weight: bold;
-	text-transform: uppercase;
-	background: #FFF;
-	padding: 0.2em;
+    padding: 0 6px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+}
+form div.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
 }
 label {
-	color: rgb(0, 0, 0);
+    margin-bottom: 4px;
+    font-size: 0.9em;
+}
+input {
+    padding: 8px;
+    border: 1px solid #091307;
+    background-color: #ffffff;
+    color: #000000;
+}
+.error {
+    color: #ff7a68;
+    font-size: 0.8em;
+    min-height: 1.1em;
 }
 button {
-	background: rgb(0, 8, 255);
-	color: white;
-	padding: 0.5em;
+    padding: 10px 18px;
+    border: 1px solid #ef3d6b;
+    background-color: #ef3d6b;
+    color: #101014;
+    font-weight: bold;
+}
+button:disabled {
+    background-color: transparent;
+    color: #666;
+    border-color: #33333d;
+}
+#listaObras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+#listaObras li {
+    background-color: #4242a9;
+    border: 1px solid #33333d;
+    padding: 10px 12px;
+    font-size: 0.9em;
+}
+#resultados div {
+    background-color: #9a9af5;
+    border-left: 3px solid #ef3d6b;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 4px;
 }
