@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Lenguaje y Arte</title>
+        <title>Grabaciones Digitales</title>
         <link href="css/estilos.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,29 +19,59 @@
             </ul>
         </nav>
     <main>
+    <div class="formulariorepositorio">
         <h1>Repositorio de grabaciones digitales de obras musicales de Laurie Anderson</h1>
-        <h2>Por favor, complete el siguiente formulario</h2>
-        <section class="formulario">
-            <form action="#" method="get">
-                <fieldset>
-                    <legend>Datos de la Obra</legend>
-                    <label for="nombre">Nombre: *</label>
-                    <input type="text" name="nombre" id="nombre" required><br>
-                    <label for="duracion">Duracion: *</label>
-                    <input type="number" name="duracion" id="duracion">minutos<br>
-                    <label for="peso">Peso del archivo: *</label>
-                    <input type="number" name="peso" id="peso">MB<br>
-                    <label for="transferencia">Tiempo estimado de transferencia en milisegundos por cada MB: *</label>
-                    <input type="number" name="transferencia" id="transferencia"><br>
-                    <label for="costo">Costo mensual de almacenamiento por cada MB: *</label>
-                    <input type="number" name="costo" id="costo"><br>
-                </fieldset>
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
-                <p class="resultado"></p>
-            </form>
-        	</section>
-    </main>
+        <h2>Configuración del repositorio</h2>
+        <form id="formConfig">
+          <fieldset id="fieldsetConfig">
+            <legend>Datos generales</legend>
+            <div class="campo">
+        <label for="cantidadObras">Cantidad de obras a cargar</label>
+        <input type="number" id="cantidadObras">
+        <span class="error" id="errorCantidad"></span>
+      </div>
+      <div class="campo">
+        <label for="tiempoTransferencia">Tiempo de transferencia (ms por MB)</label>
+        <input type="number" id="tiempoTransferencia">
+        <span class="error" id="errorTiempo"></span>
+      </div>
+      <div class="campo">
+        <label for="costoMensual">Costo mensual de almacenamiento ($ por MB)</label>
+        <input type="number" id="costoMensual">
+        <span class="error" id="errorCosto"></span>
+      </div>
+      <button type="submit" id="botonConfirmarConfig">Confirmar configuración</button>
+      </fieldset>
+      </form>
+      <h2>Carga de obras <span id="contadorObras">(0 de --)</span></h2>
+        <form id="formObra">
+          <fieldset id="fieldsetObra" disabled>
+            <legend>Nueva obra</legend>
+            <div class="campo">
+              <label for="nombreObra">Nombre de la obra</label>
+              <input type="text" id="nombreObra">
+              <span class="error" id="errorNombre"></span>
+            </div>
+            <div class="campo">
+              <label for="duracionObra">Duración (minutos)</label>
+              <input type="number" id="duracionObra">
+              <span class="error" id="errorDuracion"></span>
+            </div>
+            <div class="campo">
+              <label for="pesoObra">Peso del archivo (MB)</label>
+              <input type="number" id="pesoObra">
+              <span class="error" id="errorPeso"></span>
+            </div>
+      <button type="submit" id="botonAgregarObra">Agregar obra</button>
+        </fieldset>
+      </form>
+      <ul id="listaObras"></ul>
+      <h2>Resultados</h2>
+      <button id="botonCalcular" disabled>Calcular resultados</button>
+      <div id="resultados"></div>
+      <button id="botonReiniciar" style="display:none;">Reiniciar</button>
+      </div>
+  </main>
 <footer><address>Para contactarse escribir a <a href="mailto:laurie@artedigital.com">laurie@artedigital.com</a></address></footer>
     <script src="js/script4.js"></script>
     </div>
